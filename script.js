@@ -35,11 +35,11 @@ function openSubTab(evt, state, county) {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Try to open MA tab
-    var maTab = document.querySelector('button[onclick="openTab(event, 'MA')"]');
+    var maTab = document.querySelector('button[onclick="openTab(event, \'MA\')"]');
     if (maTab) {
         openTab(null, 'MA');
         // Try to open Suffolk subtab
-        var suffolkSubTab = document.querySelector('button[onclick="openSubTab(event, 'MA', 'Suffolk')"]');
+        var suffolkSubTab = document.querySelector('button[onclick="openSubTab(event, \'MA\', \'Suffolk\')"]');
         if (suffolkSubTab) {
             openSubTab(null, 'MA', 'Suffolk');
         } else {
@@ -57,4 +57,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
-
