@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#date_update {
+    text-align: center;
+	color: gray;
+    font-size: 10px;
+}
+.credit {
+    text-align: center;
+	color: gray;
+    font-size: 10px;
+}
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+.tabs button {
+    background-color: #f2f2f2;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.tabs button:hover {
+    background-color: #ddd;
+}
+.tabs button.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+.subtabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto;
+    width: 80%;
+}
+.subtabs button {
+    background-color: #e8e8e8;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: 0.3s;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.subtabs button:hover {
+    background-color: #d5d5d5;
+}
+.subtabs button.active {
+    background-color: #bbb;
+    font-weight: bold;
+}
+.tabcontent {
+    display: none;
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+}
+.tabcontent.active {
+    display: block;
+}
+.subtabcontent {
+    display: none;
+    padding: 10px;
+}
+.subtabcontent.active {
+    display: block;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+@media screen and (max-width: 600px) {
+    .tabs button, .subtabs button {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
